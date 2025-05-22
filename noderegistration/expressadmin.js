@@ -1,5 +1,8 @@
 const express=require('express');
 const fs=require('fs').promises;
+const dbconn=require('./database/dbConn')
+
+dbconn();
 const app=express();
 app.use(express.json());// middleware to convert incoming into json
 
